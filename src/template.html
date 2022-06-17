@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            To Do list
+        </title>
+    </head>
+    <body>
+
+        <div class="task">
+            <h1>
+                TO DO LIST
+            </h1>
+
+            <!-- <span id="task__last">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        December 24,2017
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </span> -->
+            <div id="task__box">
+                <ul id="task__lists"></ul>
+            </div>
+
+            <div class="task__add">
+                +
+            </div>
+
+            <form id="task__container" class="hide">
+
+                <label for="task__title">
+                    Title:
+                </label>
+                <input type="text" name="title" id="task__title" placeholder="Enter the title">
+                <label for="task__time">
+                    Time:
+                </label>
+                <input type="time" name="time" id="task__time" placeholder="Enter the task time">
+                <label for="task__date">
+                    Date:
+                </label>
+                <input type="datetime-local" id="task__date" placeholder="Select Date">
+
+
+                <label for="task__description">
+                    Add notes here:
+                </label>
+                <textarea name="description" id="task__description" rows="4" cols="100"></textarea>
+                <div class="task__buttons">
+                    <button type="submit" class="btn btn--primary" id="addBtn">
+                        Save
+                    </button>
+                    <button type="cancel" class="btn btn--secondary" id="cancelBtn">
+                        Cancel
+                    </button>
+
+                </div>
+                <div id="error-msg" class="error-msg hide">
+                    It cannot be blank
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

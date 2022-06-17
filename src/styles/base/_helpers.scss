@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+.editicn{
+    position:absolute;
+    top:23%;
+    right:40px;
+    font-size: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    opacity:0.8;
+    @include transition;
+    &:hover{
+        opacity:1;
+    }
+}
+
+
+.bord{
+    border:1px solid white;
+    padding:10px;
+    position:relative;
+}
+
+.trashicn{
+    position:absolute;
+    right:20px;
+    top:23%;
+    font-size: 25px;
+    cursor: pointer;
+    opacity:0.8;
+    @include transition;
+    &:hover{
+        opacity:1;
+    }
+  
+}
+
+
+.hide{
+    display: none;
+   }
+   
+   .show{
+       display: block;
+   }
+

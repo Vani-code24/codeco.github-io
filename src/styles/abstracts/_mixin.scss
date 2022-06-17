@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+
+@mixin border($rad:null,$bord:null){
+    border-radius:$rad;
+    $border:$bord;
+}
+
+@mixin transition($col:null,$bgCol:null){
+    transition:all 0.5s ease-in-out;
+    &:hover{
+        color:$col;
+        background-color:$bgCol;
+    }
+}
